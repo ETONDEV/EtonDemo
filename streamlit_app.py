@@ -123,6 +123,7 @@ def update_stock_data():
 
     
 st.set_page_config(page_title="Demo 입니당")
+stock_dataframe = st.empty()
 
 while True:
     update_stock_data()
