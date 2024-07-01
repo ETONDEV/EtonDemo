@@ -121,8 +121,9 @@ def update_stock_data():
 
 #===========Stock END=============
 
+    
 st.set_page_config(page_title="Demo 입니당")
 
 while True:
     update_stock_data()
-    time.sleep(1)
+    time.sleep(5)
