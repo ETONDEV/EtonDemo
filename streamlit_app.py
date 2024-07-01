@@ -13,6 +13,17 @@ import bs4 as bs
 import urllib3
 import ast
 import re
+#======================var START=========================
+
+# Define market timezones and hours
+korean_tz = pytz.timezone("Asia/Seoul")
+us_tz = pytz.timezone("America/New_York")
+korean_market_open = datetime.time(9, 0, 0)  # 9:00 AM KST
+korean_market_close = datetime.time(15, 30, 0)  # 3:30 PM KST
+us_market_open = datetime.time(9, 30, 0)  # 9:30 AM ET
+us_market_close = datetime.time(16, 0, 0)  # 4:00 PM ET
+kor_market_open_flag = 0
+#======================var END=========================
 
 #===========Stock START=============
 # 1. 종목 데이터 가져오기
